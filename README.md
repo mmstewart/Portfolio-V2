@@ -1,49 +1,33 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
+<h1 align=center>🖥️</h1>
+<h1 align=center> Marcus Stewart's Portfolio V2</h1>
+
+<p align=center> See <a href="https://www.marcusstewart.me/">https://www.marcusstewart.me/</a>. Made with Gatsby. ❤️ </p>
+
+<p align=center>
+  <a href="https://www.marcusstewart.me/"><img alt="Website" src="https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fwww.marcusstewart.me%2F"></a>
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6be03075-a3ae-426a-8f3d-670c321d6753/deploy-status)](https://app.netlify.com/projects/sleepy-raman-af722d/deploys)
+
 </p>
-<h1 align="center">
-  Gatsby Minimal Starter
-</h1>
 
-## 🚀 Quick start
+## 🤓 Author
 
-1.  **Create a Gatsby site.**
+-   **Marcus Stewart** - [MMStewart](https://github.com/mmstewart)
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+## 📚 Resources
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+<p>Resources that helped me make this website possible!</p>
 
-2.  **Start developing.**
+-   [React Icons](https://react-icons.github.io/react-icons)
+-   [DaisyUI](https://daisyui.com)
 
-    Navigate into your new site’s directory and start it up.
+## 💜 Acknowledgments
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+-   [Gatsby](https://www.gatsbyjs.com)
+-   [Netlify](https://www.netlify.com)
 
-3.  **Open the code and start customizing!**
+## 📝 License
 
-    Your site is now running at http://localhost:8000!
+Copyright (c) 2025<!--- -(Future Years) --> Marcus Stewart, see Git history
 
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Netlify)
-
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
-
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
+BSD Zero Clause licensed, see [LICENSE](LICENSE) file.

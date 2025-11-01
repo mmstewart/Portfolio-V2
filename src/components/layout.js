@@ -44,7 +44,9 @@ export default function Layout({ children, title, description }) {
 			</Helmet>
 
 			<Navbar />
-			{children}
+
+			<div className="flex flex-col items-center justify-start grow pt-32 pb-16">{children}</div>
+
 			<Footer />
 		</div>
 	);

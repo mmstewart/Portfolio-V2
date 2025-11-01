@@ -34,12 +34,12 @@ const ProjectsPage = () => {
 		<Layout
 			title="Projects"
 			description="Portfolio of Marcus Stewart, Full Stack Developer.">
-			<main className="flex flex-col items-center justify-center grow text-center">
-				<div className="max-w-7xl">
-					<h2 className="text-4xl leading-snug sm:text-6xl text-left font-semibold bg-linear-to-r from-sky-500 to-indigo-500 bg-clip-text text-transparent">
-						Projects
-					</h2>
-					<ul class="mt-4 grid grid-cols-4 sm:grid-cols-3 gap-x-4">
+			<div className="flex flex-col items-center text-center">
+				<h1 className="leading-snug text-5xl sm:text-6xl font-semibold bg-linear-to-r from-sky-500 to-indigo-500 bg-clip-text text-transparent mb-8">
+					Projects
+				</h1>
+				<div class="hero-content">
+					<ul class="grid grid-cols-1 sm:grid-cols-3 gap-x-4">
 						{cards.map((card) => (
 							<Card
 								src={card.src}
@@ -51,7 +51,7 @@ const ProjectsPage = () => {
 						))}
 					</ul>
 				</div>
-			</main>
+			</div>
 		</Layout>
 	);
 };
