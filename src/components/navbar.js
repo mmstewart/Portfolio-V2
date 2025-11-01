@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import { RiMenu2Line } from 'react-icons/ri';
+import { Icon } from '@iconify/react';
 
 const links = [
 	{
@@ -10,10 +10,6 @@ const links = [
 	{
 		title: 'About',
 		url: '/about',
-	},
-	{
-		title: 'Skills',
-		url: '/skills',
 	},
 	{
 		title: 'Projects',
@@ -34,9 +30,13 @@ export default function Navbar() {
 						tabIndex="0"
 						role="button"
 						className="btn btn-ghost lg:hidden">
-						<RiMenu2Line className="h-5 w-5" />
+						<Icon
+							icon="material-symbols:menu-rounded"
+							width="20"
+							height="20"
+						/>
 					</div>
-					<ul className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+					<ul className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-5 w-52 p-2 border border-base-300">
 						{links.map((list, index) => (
 							<li key={index}>
 								<Link

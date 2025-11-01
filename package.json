@@ -29,7 +29,7 @@
     "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
-    "daisyui": "^5.0.50",
-    "react-icons": "^5.5.0"
+    "@iconify/react": "^6.0.2",
+    "daisyui": "^5.0.50"
   }
 }
