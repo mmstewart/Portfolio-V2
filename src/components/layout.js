@@ -3,6 +3,7 @@ import Navbar from './navbar';
 import Footer from './footer';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
+import gradientFavicon from '../../static/images/gradient.png';
 
 export default function Layout({ children, title, description }) {
 	const { site } = useStaticQuery(graphql`
@@ -22,7 +23,7 @@ export default function Layout({ children, title, description }) {
 
 	return (
 		<div className="flex flex-col min-h-screen overflow-hidden">
-			<Helmet>
+			<Helmet link={[{ rel: 'icon', type: 'image/png', href: gradientFavicon }]}>
 				<html
 					lang="en"
 					data-theme="light"

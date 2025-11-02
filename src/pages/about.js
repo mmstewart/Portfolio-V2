@@ -115,7 +115,7 @@ const AboutPage = () => {
 											width="20"
 											height="20"
 										/>
-										<div class="text-sm">{name}</div>
+										<div className="text-sm">{name}</div>
 									</div>
 								))}
 							</div>

@@ -27,7 +27,6 @@
 ## 💜 Acknowledgments
 
 -   [Gatsby](https://www.gatsbyjs.com)
--   [Getform](https://getform.io)
 -   [Netlify](https://www.netlify.com)
 
 ## 📝 License

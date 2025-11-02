@@ -14,6 +14,8 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@arcjet/inspect": "^1.0.0-beta.13",
+    "@arcjet/node": "^1.0.0-beta.13",
     "@tailwindcss/postcss": "^4.1.11",
     "ajv": "8.17.1",
     "ajv-keywords": "5.1.0",
