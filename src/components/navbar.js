@@ -69,7 +69,7 @@ export default function Navbar() {
 			</div>
 			<div className="navbar-end">
 				<a
-					href="/static/resume.pdf"
+					href="/resume.pdf"
 					rel="noopener noreferrer"
 					className="btn btn-ghost">
 					Resume

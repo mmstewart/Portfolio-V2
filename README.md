@@ -22,10 +22,12 @@
 
 -   [Iconify](https://iconify.design)
 -   [DaisyUI](https://daisyui.com)
+-   [Tailwind CSS](https://tailwindcss.com)
 
 ## 💜 Acknowledgments
 
 -   [Gatsby](https://www.gatsbyjs.com)
+-   [Getform](https://getform.io)
 -   [Netlify](https://www.netlify.com)
 
 ## 📝 License

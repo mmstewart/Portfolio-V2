@@ -3,17 +3,17 @@ import { Icon } from '@iconify/react';
 
 const icons = [
 	{
-		icon: 'simple-icons:github',
+		icon: 'mdi:github',
 		url: 'https://github.com/mmstewart',
 		tooltipText: 'GitHub',
 	},
 	{
-		icon: 'uil:linkedin',
+		icon: 'mdi:linkedin',
 		url: 'https://linkedin.com/in/marcusmstewart',
 		tooltipText: 'Linkedin',
 	},
 	{
-		icon: 'ic:round-mail',
+		icon: 'mdi:email',
 		url: 'mailto:mss.stewart1@gmail.com',
 		tooltipText: 'Email',
 	},
@@ -28,14 +28,13 @@ export default function Footer() {
 					<a
 						key={index}
 						href={url}
-						target="_blank"
 						rel="noopener noreferrer"
 						className="tooltip"
 						data-tip={tooltipText}>
 						<Icon
 							icon={icon}
-							width="20"
-							height="20"
+							width="26"
+							height="26"
 						/>
 					</a>
 				))}

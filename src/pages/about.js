@@ -95,7 +95,7 @@ const AboutPage = () => {
 					About
 				</h1>
 				<div className="hero-content flex-col items-stretch lg:flex-row lg:divide-x divide-base-300 gap-y-8">
-					<p className="content-center max-w-lg text-justify indent-8 lg:text-lg lg:pr-8">
+					<p className="content-center max-w-lg text-justify indent-8 text-base lg:text-lg lg:pr-8">
 						Hello! I'm Marcus Stewart, I build clean, performant solutions that address real business challenges. Over my
 						career, I’ve learned that simplicity often leads to the most effective results. I specialize in creating
 						user-centered, performance-driven web applications using modern frameworks like Laravel, Vue, and React — always
@@ -115,7 +115,7 @@ const AboutPage = () => {
 											width="20"
 											height="20"
 										/>
-										<div>{name}</div>
+										<div class="text-sm">{name}</div>
 									</div>
 								))}
 							</div>

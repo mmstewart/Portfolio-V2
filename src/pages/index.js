@@ -10,7 +10,7 @@ const IndexPage = () => {
 				<h2 className="text-4xl font-semibold tracking-tight text-pretty sm:text-6xl bg-linear-to-r from-sky-500 to-indigo-500 bg-clip-text text-transparent">
 					Marcus Stewart
 				</h2>
-				<p className="mt-2 text-2xl font-semibold">Full Stack Developer</p>
+				<p className="mt-2 text-lg lg:text-2xl font-semibold">Full Stack Developer</p>
 			</div>
 		</Layout>
 	);
