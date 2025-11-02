@@ -4,6 +4,7 @@ import Footer from './footer';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 import gradientFavicon from '../../static/images/gradient.png';
+import useArcjet from '../hooks/arcjet';
 
 export default function Layout({ children, title, description }) {
 	const { site } = useStaticQuery(graphql`
@@ -20,6 +21,8 @@ export default function Layout({ children, title, description }) {
 
 	const metaTitle = title ? `${title} | ${site.siteMetadata.title}` : site.siteMetadata.title;
 	const metaDescription = description || site.siteMetadata.description;
+
+	useArcjet();
 
 	return (
 		<div className="flex flex-col min-h-screen overflow-hidden">
