@@ -23,6 +23,7 @@
 -   [Iconify](https://iconify.design)
 -   [DaisyUI](https://daisyui.com)
 -   [Tailwind CSS](https://tailwindcss.com)
+-   [Arcjet](https://arcjet.com)
 
 ## 💜 Acknowledgments
 

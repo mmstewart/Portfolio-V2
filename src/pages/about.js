@@ -69,7 +69,7 @@ const skills = [
 	},
 	{
 		icon: 'file-icons:vue',
-		name: 'Vue',
+		name: 'Vue.js',
 	},
 	{
 		icon: 'mdi:server',
@@ -86,6 +86,11 @@ const skills = [
 ];
 
 const AboutPage = () => {
+	const sortedSkills = React.useMemo(
+		() => [...skills].sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' })),
+		[]
+	);
+
 	return (
 		<Layout
 			title="About"
@@ -106,7 +111,7 @@ const AboutPage = () => {
 						<div className="card-body">
 							<h2 className="card-title">Skills</h2>
 							<div className="flex flex-row flex-wrap gap-2">
-								{skills.map(({ icon, name }, index) => (
+								{sortedSkills.map(({ icon, name }, index) => (
 									<div
 										key={index}
 										className="badge badge-md lg:badge-lg badge-neutral badge-outline flex items-center gap-1">
