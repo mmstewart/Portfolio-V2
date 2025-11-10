@@ -7,9 +7,6 @@
   <a href="https://www.marcusstewart.me/">
     <img alt="Website" src="https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fwww.marcusstewart.me%2F">
   </a>
-  <a href="https://app.netlify.com/projects/sleepy-raman-af722d/deploys">
-    <img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/6be03075-a3ae-426a-8f3d-670c321d6753/deploy-status">
-  </a>
 </p>
 
 ## 🤓 Author
