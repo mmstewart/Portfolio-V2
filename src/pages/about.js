@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Layout from '../components/layout';
-import { Icon } from '@iconify/react';
+import Trustbar from '../components/trustbar';
 
 const skills = [
 	{
@@ -86,11 +86,6 @@ const skills = [
 ];
 
 const AboutPage = () => {
-	const sortedSkills = React.useMemo(
-		() => [...skills].sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' })),
-		[]
-	);
-
 	return (
 		<Layout
 			title="About"
@@ -107,27 +102,12 @@ const AboutPage = () => {
 						with a focus on clean, maintainable code. My curiosity and drive for growth push me to continually expand my
 						expertise in areas such as API development, testing, and scalability.
 					</p>
-					<div className="max-w-lg card border border-base-300 lg:pl-8">
-						<div className="card-body">
-							<h2 className="card-title">Skills</h2>
-							<div className="flex flex-row flex-wrap gap-2">
-								{sortedSkills.map(({ icon, name }, index) => (
-									<div
-										key={index}
-										className="badge badge-md lg:badge-lg badge-neutral badge-outline flex items-center gap-1">
-										<Icon
-											icon={icon}
-											width="20"
-											height="20"
-										/>
-										<div className="text-sm">{name}</div>
-									</div>
-								))}
-							</div>
-						</div>
-					</div>
+				</div>
+				<div className="hero-content flex flex-col items-stretch mt-8">
+					<p className="text-sky-500 mb-2 font-medium">I work with a range of tools and technologies, including:</p>
 				</div>
 			</div>
+			<Trustbar skills={skills} />
 		</Layout>
 	);
 };

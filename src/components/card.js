@@ -2,7 +2,7 @@ import * as React from 'react';
 
 export default function Card({ src, alt, title, description, badges = [], buttons = [] }) {
 	return (
-		<div className="card bg-base-100 w-72 lg:w-96 border border-base-300">
+		<div className="card bg-base-100 w-96 border border-base-300">
 			<figure>
 				<img
 					src={src}

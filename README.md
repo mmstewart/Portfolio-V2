@@ -19,6 +19,7 @@
 
 -   [Iconify](https://iconify.design)
 -   [DaisyUI](https://daisyui.com)
+-   [PrebuiltUI](https://prebuiltui.com)
 -   [Tailwind CSS](https://tailwindcss.com)
 -   [Arcjet](https://arcjet.com)
 
