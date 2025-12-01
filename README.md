@@ -21,6 +21,7 @@
 -   [DaisyUI](https://daisyui.com)
 -   [PrebuiltUI](https://prebuiltui.com)
 -   [Tailwind CSS](https://tailwindcss.com)
+-   [Rombo](https://rombo.co)
 -   [Arcjet](https://arcjet.com)
 
 ## 💜 Acknowledgments

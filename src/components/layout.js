@@ -49,7 +49,9 @@ export default function Layout({ children, title, description }) {
 
 			<Navbar />
 
-			<div className="flex flex-col items-center justify-start grow pt-32 pb-16">{children}</div>
+			<div className="flex flex-col items-center justify-start grow pt-32 pb-16 motion-preset-fade motion-duration-1500">
+				{children}
+			</div>
 
 			<Footer />
 		</div>
