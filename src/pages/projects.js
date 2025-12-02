@@ -1,12 +1,18 @@
 import * as React from 'react';
 import Card from '../components/card';
 import Layout from '../components/layout';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const cards = [
 	{
 		title: 'Portfolio 2.0',
-		alt: 'Portfolio 2.0 Image',
-		src: '/images/portfolio.png',
+		image: (
+			<StaticImage
+				src="../images/portfolio.png"
+				alt="Portfolio 2.0 Image"
+				placeholder="blurred"
+			/>
+		),
 		description:
 			'A rebuilt and modernized portfolio showcasing my latest projects, skills, and approach to building clean, performant web applications.',
 		badges: ['Gatsby', 'TailwindCSS', 'DaisyUI'],
@@ -17,8 +23,13 @@ const cards = [
 	},
 	{
 		title: 'Node-RED Temperature Monitoring',
-		alt: 'Node-RED Temperature Monitoring Flow Image',
-		src: '/images/nodered.png',
+		image: (
+			<StaticImage
+				src="../images/nodered.png"
+				alt="Node-RED Temperature Monitoring Flow Image"
+				placeholder="blurred"
+			/>
+		),
 		description:
 			'Created a server laboratory temperature-monitoring application to power off the servers once the temperature of the laboratory passes the temperature limit.',
 		badges: ['Bash', 'Node-RED'],
@@ -32,8 +43,13 @@ const cards = [
 	},
 	{
 		title: 'Motivational Quotes',
-		alt: 'Motivational Quotes Image',
-		src: '/images/motivationalquotes.png',
+		image: (
+			<StaticImage
+				src="../images/motivationalquotes.png"
+				alt="Motivational Quotes Image"
+				placeholder="blurred"
+			/>
+		),
 		description:
 			'A website that generates motivational quotes from a local database and powerful images from Unsplash to help motivate people. Inspired by the popular chrome extension, Momentum.',
 		badges: ['React', 'Unsplash API', 'SCSS'],
@@ -62,8 +78,7 @@ const ProjectsPage = () => {
 						{cards.map((card, index) => (
 							<Card
 								key={index}
-								src={card.src}
-								alt={card.alt}
+								image={card.image}
 								title={card.title}
 								description={card.description}
 								badges={card.badges}

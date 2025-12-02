@@ -9,5 +9,12 @@ module.exports = {
 		author: '@MarcusStewart',
 		siteUrl: 'https://www.marcusstewart.me',
 	},
-	plugins: ['gatsby-plugin-postcss', `gatsby-plugin-react-helmet`, `react-helmet`],
+	plugins: [
+		'gatsby-plugin-postcss',
+		`gatsby-plugin-react-helmet`,
+		`react-helmet`,
+		`gatsby-plugin-image`,
+		`gatsby-plugin-sharp`,
+		`gatsby-transformer-sharp`,
+	],
 };

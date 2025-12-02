@@ -3,7 +3,7 @@ import Navbar from './navbar';
 import Footer from './footer';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
-import gradientFavicon from '../../static/images/gradient.png';
+import gradientFavicon from '../images/gradientFavicon.png';
 import useArcjet from '../hooks/arcjet';
 
 export default function Layout({ children, title, description }) {
