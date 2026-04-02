@@ -31,6 +31,6 @@
 
 ## 📝 License
 
-Copyright (c) 2025<!--- -(Future Years) --> Marcus Stewart, see Git history
+Copyright (c) 2026<!--- -(Future Years) --> Marcus Stewart, see Git history
 
 BSD Zero Clause licensed, see [LICENSE](LICENSE) file.
