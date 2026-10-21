@@ -1,7 +1,8 @@
 import * as React from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
 import Card from '../components/card'
 import Layout from '../components/layout'
-import { StaticImage } from 'gatsby-plugin-image'
+import Seo from '../components/seo'
 
 const cards = [
 	{
@@ -9,40 +10,55 @@ const cards = [
 		image: (
 			<StaticImage
 				src='../images/nourishr.png'
-				alt='Nourishr Image'
+				alt='Nourishr dashboard'
 				placeholder='blurred'
 			/>
 		),
-		description: 'A nutrition tracking app that helps users monitor their weight, set goals, and stay on top of their health journey.',
+		description:
+			'A nutrition tracking app that helps users monitor their weight, set goals, and stay on top of their health journey.',
 		badges: ['Laravel', 'Vue.js', 'Tailwind', 'MySQL'],
-		buttons: [{ label: 'Live Demo', href: 'https://nourishr-app.vercel.app', className: 'btn btn-sm btn-primary' }],
+		buttons: [
+			// Live demo is paused until the PHP security patch is deployed. Restore this when it's back up:
+			// { label: 'Live Demo', href: 'https://nourishr-app.vercel.app', className: 'btn btn-sm btn-primary' },
+			{ label: 'View Repo', href: 'https://github.com/mmstewart/nourishr', className: 'btn btn-sm btn-primary' },
+		],
 	},
-	// {
-	// 	title: 'Portfolio 2.0',
-	// 	image: (
-	// 		<StaticImage
-	// 			src='../images/portfolio.png'
-	// 			alt='Portfolio 2.0 Image'
-	// 			placeholder='blurred'
-	// 		/>
-	// 	),
-	// 	description: 'A rebuilt and modernized portfolio showcasing my latest projects, skills, and approach to building clean, performant web applications.',
-	// 	badges: ['Gatsby', 'TailwindCSS', 'DaisyUI'],
-	// 	buttons: [
-	// 		{ label: 'Live Demo', href: 'https://marcusstewart.me', className: 'btn btn-sm btn-primary' },
-	// 		{ label: 'View Repo', href: 'https://github.com/mmstewart/Portfolio-V2', className: 'btn btn-sm btn-outline btn-primary' },
-	// 	],
-	// },
+	{
+		title: 'Laravel X-Ray',
+		image: (
+			<StaticImage
+				src='../images/x-ray.png'
+				alt='Laravel X-Ray scan results in the terminal'
+				placeholder='blurred'
+			/>
+		),
+		description:
+			'An open-source Laravel package that scans your app before a framework upgrade and flags compatibility issues, from PHP version requirements to outdated dependencies.',
+		badges: ['Laravel', 'PHP', 'Composer', 'Pest'],
+		buttons: [
+			{
+				label: 'View on Packagist',
+				href: 'https://packagist.org/packages/mmstewart/laravel-x-ray',
+				className: 'btn btn-sm btn-primary',
+			},
+			{
+				label: 'View Repo',
+				href: 'https://github.com/mmstewart/laravel-x-ray',
+				className: 'btn btn-sm btn-outline btn-primary',
+			},
+		],
+	},
 	{
 		title: 'Node-RED Temperature Monitoring',
 		image: (
 			<StaticImage
 				src='../images/nodered.png'
-				alt='Node-RED Temperature Monitoring Flow Image'
+				alt='Node-RED temperature monitoring flow'
 				placeholder='blurred'
 			/>
 		),
-		description: 'Created a server laboratory temperature-monitoring application to power off the servers once the temperature of the laboratory passes the temperature limit.',
+		description:
+			'Built a temperature-monitoring system for a server lab that automatically shuts down the servers when the room exceeds a safe temperature.',
 		badges: ['Bash', 'Node-RED'],
 		buttons: [
 			{
@@ -57,12 +73,12 @@ const cards = [
 		image: (
 			<StaticImage
 				src='../images/motivationalquotes.png'
-				alt='Motivational Quotes Image'
+				alt='Motivational Quotes homepage'
 				placeholder='blurred'
 			/>
 		),
 		description:
-			'A website that generates motivational quotes from a local database and powerful images from Unsplash to help motivate people. Inspired by the popular chrome extension, Momentum.',
+			'A website that pairs motivational quotes from a local database with striking images from Unsplash. Inspired by the popular Chrome extension Momentum.',
 		badges: ['React', 'Unsplash API', 'SCSS'],
 		buttons: [
 			{ label: 'Live Demo', href: 'https://reason-quotes.netlify.app', className: 'btn btn-sm btn-primary' },
@@ -75,30 +91,24 @@ const cards = [
 	},
 ]
 
-const ProjectsPage = () => {
-	return (
-		<Layout
-			title='Projects'
-			description='Portfolio of Marcus Stewart, Full Stack Developer.'>
-			<div className='flex flex-col items-center text-center'>
-				<h1 className='leading-snug text-5xl sm:text-6xl font-semibold bg-linear-to-r from-sky-500 to-indigo-500 bg-clip-text text-transparent mb-8'>Projects</h1>
-				<div className='hero-content'>
-					<ul className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4'>
-						{cards.map((card, index) => (
-							<Card
-								key={index}
-								image={card.image}
-								title={card.title}
-								description={card.description}
-								badges={card.badges}
-								buttons={card.buttons}
-							/>
-						))}
-					</ul>
-				</div>
-			</div>
-		</Layout>
-	)
-}
+const ProjectsPage = () => (
+	<Layout title='Projects'>
+		<ul className='grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3'>
+			{cards.map(card => (
+				<Card
+					key={card.title}
+					{...card}
+				/>
+			))}
+		</ul>
+	</Layout>
+)
 
 export default ProjectsPage
+
+export const Head = () => (
+	<Seo
+		title='Projects'
+		description='Projects by Marcus Stewart, full-stack software engineer building web applications with Laravel, Vue, and AI.'
+	/>
+)

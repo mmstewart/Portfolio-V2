@@ -1,57 +1,43 @@
-import * as React from 'react';
-import Layout from '../components/layout';
-import { Icon } from '@iconify/react';
+import * as React from 'react'
+import { Icon } from '@iconify/react'
+import Layout from '../components/layout'
+import Seo from '../components/seo'
 
-const icons = [
-	{
-		icon: 'mdi:github',
-		url: 'https://github.com/mmstewart',
-		name: 'GitHub',
-	},
-	{
-		icon: 'mdi:linkedin',
-		url: 'https://linkedin.com/in/marcusmstewart',
-		name: 'Linkedin',
-	},
-	{
-		icon: 'mdi:email',
-		url: 'mailto:mss.stewart1@gmail.com',
-		name: 'Email',
-	},
-];
+const links = [
+	{ icon: 'mdi:github', url: 'https://github.com/mmstewart', name: 'GitHub' },
+	{ icon: 'mdi:linkedin', url: 'https://linkedin.com/in/marcusmstewart', name: 'LinkedIn' },
+	{ icon: 'mdi:email', url: 'mailto:mss.stewart1@gmail.com', name: 'Email' },
+]
 
-const ContactPage = () => {
-	return (
-		<Layout
-			title="Contact"
-			description="Portfolio of Marcus Stewart, Full Stack Developer.">
-			<div className="mb-16 flex flex-col items-center justify-center text-center grow">
-				<h2 className="text-4xl font-semibold tracking-tight text-pretty sm:text-6xl bg-linear-to-r from-sky-500 to-indigo-500 bg-clip-text text-transparent">
-					Contact
-				</h2>
-				<p className="mt-2 text-lg lg:text-2xl font-semibold">Let's get in touch!</p>
-				<div className="hero-content flex-col mt-8">
-					<div className="grid grid-cols-1 lg:grid-cols-3 gap-x-20 gap-y-10">
-						{icons.map(({ icon, url, name }, index) => (
-							<a
-								key={index}
-								href={url}
-								rel="noopener noreferrer">
-								<div className="flex flex-row gap-2">
-									<Icon
-										icon={icon}
-										width="26"
-										height="26"
-									/>
-									<div className="text-base lg:text-lg">{name}</div>
-								</div>
-							</a>
-						))}
-					</div>
-				</div>
-			</div>
-		</Layout>
-	);
-};
+const ContactPage = () => (
+	<Layout
+		title='Contact'
+		subtitle="Let's get in touch!"
+		centered>
+		<ul className='flex flex-col items-center gap-4 sm:flex-row sm:gap-10'>
+			{links.map(({ icon, url, name }) => (
+				<li key={name}>
+					<a
+						href={url}
+						{...(url.startsWith('http') && { target: '_blank', rel: 'noopener noreferrer' })}
+						className='flex items-center gap-2 text-base transition hover:text-sky-500 lg:text-lg'>
+						<Icon
+							icon={icon}
+							className='size-6'
+						/>
+						{name}
+					</a>
+				</li>
+			))}
+		</ul>
+	</Layout>
+)
 
-export default ContactPage;
+export default ContactPage
+
+export const Head = () => (
+	<Seo
+		title='Contact'
+		description='Get in touch with Marcus Stewart, full-stack software engineer.'
+	/>
+)

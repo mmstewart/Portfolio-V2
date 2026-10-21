@@ -16,22 +16,17 @@
   "dependencies": {
     "@arcjet/inspect": "^1.0.0-beta.13",
     "@arcjet/node": "^1.0.0-beta.13",
-    "@netlify/blobs": "^10.7.8",
     "@tailwindcss/postcss": "^4.1.11",
     "ajv": "8.17.1",
     "ajv-keywords": "5.1.0",
-    "autoprefixer": "^10.4.21",
     "gatsby": "^5.14.1",
     "gatsby-plugin-image": "^3.15.0",
     "gatsby-plugin-postcss": "^6.14.0",
-    "gatsby-plugin-react-helmet": "^6.15.0",
     "gatsby-plugin-sharp": "^5.15.0",
-    "gatsby-source-filesystem": "^5.15.0",
-    "gatsby-transformer-sharp": "^5.15.0",
+    "gatsby-source-filesystem": "^5.16.0",
     "postcss": "^8.5.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
     "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
@@ -39,5 +34,14 @@
     "@iconify/react": "^6.0.2",
     "daisyui": "^5.5.20",
     "tailwindcss-motion": "^1.1.1"
+  },
+  "allowScripts": {
+    "sharp@0.32.6": true,
+    "lmdb@2.5.2": true,
+    "lmdb@2.5.3": true,
+    "msgpackr-extract@3.0.3": true,
+    "@parcel/watcher@2.5.1": true,
+    "gatsby@5.16.1": true,
+    "gatsby-cli@5.16.0": true
   }
 }

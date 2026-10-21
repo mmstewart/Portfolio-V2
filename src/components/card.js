@@ -2,37 +2,39 @@ import * as React from 'react'
 
 export default function Card({ image, title, description, badges = [], buttons = [] }) {
 	return (
-		<div className='card bg-base-100 w-96 border border-base-300'>
-			<figure>{image}</figure>
-			<div className='card-body'>
+		<li className='w-full h-full border card border-base-300 bg-base-100'>
+			<figure className='aspect-video overflow-hidden [&_.gatsby-image-wrapper]:h-full [&_.gatsby-image-wrapper]:w-full'>
+				{image}
+			</figure>
+			<div className='gap-4 text-left card-body'>
 				<h2 className='card-title'>{title}</h2>
 				{badges.length > 0 && (
-					<div className='card-actions justify-start flex flex-wrap gap-2'>
-						{badges.map((badge, index) => (
-							<div
-								key={index}
+					<ul className='flex flex-wrap gap-2'>
+						{badges.map(badge => (
+							<li
+								key={badge}
 								className='badge badge-outline badge-primary'>
 								{badge}
-							</div>
+							</li>
+						))}
+					</ul>
+				)}
+				<p className='leading-relaxed text-pretty'>{description}</p>
+				{buttons.length > 0 && (
+					<div className='justify-end pt-2 mt-auto card-actions'>
+						{buttons.map(btn => (
+							<a
+								key={btn.label}
+								href={btn.href}
+								target='_blank'
+								rel='noopener noreferrer'
+								className={`btn ${btn.className || 'btn-primary'}`}>
+								{btn.label}
+							</a>
 						))}
 					</div>
 				)}
-				<p className='text-left'>{description}</p>
-				<div className='card-actions justify-end'>
-					{buttons.length > 0 && (
-						<div className='flex gap-x-2'>
-							{buttons.map((btn, index) => (
-								<a
-									key={index}
-									href={btn.href}
-									className={`btn ${btn.className || 'btn-primary'}`}>
-									{btn.label}
-								</a>
-							))}
-						</div>
-					)}
-				</div>
 			</div>
-		</div>
+		</li>
 	)
 }

@@ -5,16 +5,10 @@ module.exports = {
 	trailingSlash: 'never',
 	siteMetadata: {
 		title: 'Marcus Stewart',
-		description: 'Full Stack Developer portfolio.',
-		author: '@MarcusStewart',
+		description:
+			'Portfolio of Marcus Stewart, full-stack software engineer building web applications with Laravel, Vue, and AI.',
+		author: 'Marcus Stewart',
 		siteUrl: 'https://www.marcusstewart.me',
 	},
-	plugins: [
-		'gatsby-plugin-postcss',
-		`gatsby-plugin-react-helmet`,
-		`react-helmet`,
-		`gatsby-plugin-image`,
-		`gatsby-plugin-sharp`,
-		`gatsby-transformer-sharp`,
-	],
-};
+	plugins: ['gatsby-plugin-postcss', 'gatsby-plugin-image', 'gatsby-plugin-sharp'],
+}
