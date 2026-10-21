@@ -34,7 +34,7 @@ const cards = [
 		),
 		description:
 			'An open-source Laravel package that scans your app before a framework upgrade and flags compatibility issues, from PHP version requirements to outdated dependencies.',
-		badges: ['Laravel', 'PHP', 'Composer', 'Pest'],
+		badges: ['PHP', 'Composer', 'Pest'],
 		buttons: [
 			{
 				label: 'View on Packagist',
