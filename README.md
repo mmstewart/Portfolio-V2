@@ -9,6 +9,16 @@
   </a>
 </p>
 
+## 🚀 Deployment
+
+Deployed on [Netlify](https://www.netlify.com) automatically on every push to `main`.
+
+- **Node.js:** set by the `NODE_VERSION` environment variable in Netlify (currently `24`).
+- **`@netlify/blobs` is required** even though the site's code doesn't import it. Netlify's bot-blocker extension adds
+  an edge function that loads it from this project's dependencies, and the build fails without it. Don't remove it when
+  cleaning up dependencies.
+- **Environment variables:** `ARCJET_KEY` must be set in Netlify for the Arcjet function in `netlify/functions/index`.
+
 ## 🤓 Author
 
 - **Marcus Stewart** - [MMStewart](https://github.com/mmstewart)
@@ -31,6 +41,6 @@
 
 ## 📝 License
 
-Copyright (c) 2026<!--- -(Future Years) --> Marcus Stewart, see Git history
+Copyright (c) 2025–present Marcus Stewart, see Git history
 
 BSD Zero Clause licensed, see [LICENSE](LICENSE) file.
