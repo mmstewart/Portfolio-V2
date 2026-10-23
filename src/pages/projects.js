@@ -18,9 +18,16 @@ const cards = [
 			'A nutrition tracking app that helps users monitor their weight, set goals, and stay on top of their health journey.',
 		badges: ['Laravel', 'Vue.js', 'Tailwind', 'MySQL'],
 		buttons: [
-			// Live demo is paused until the PHP security patch is deployed. Restore this when it's back up:
-			// { label: 'Live Demo', href: 'https://nourishr-app.vercel.app', className: 'btn btn-sm btn-primary' },
-			{ label: 'View Repo', href: 'https://github.com/mmstewart/nourishr', className: 'btn btn-sm btn-primary' },
+			{
+				label: 'Live Demo',
+				href: 'https://nourishr-app.vercel.app',
+				className: 'btn btn-sm btn-primary',
+			},
+			{
+				label: 'View Repo',
+				href: 'https://github.com/mmstewart/nourishr',
+				className: 'btn btn-sm btn-outline btn-primary',
+			},
 		],
 	},
 	{
@@ -81,7 +88,11 @@ const cards = [
 			'A website that pairs motivational quotes from a local database with striking images from Unsplash. Inspired by the popular Chrome extension Momentum.',
 		badges: ['React', 'Unsplash API', 'SCSS'],
 		buttons: [
-			{ label: 'Live Demo', href: 'https://reason-quotes.netlify.app', className: 'btn btn-sm btn-primary' },
+			{
+				label: 'Live Demo',
+				href: 'https://reason-quotes.netlify.app',
+				className: 'btn btn-sm btn-primary',
+			},
 			{
 				label: 'View Repo',
 				href: 'https://github.com/mmstewart/Motivational-Quotes',
